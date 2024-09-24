@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: nucklebold;
+    src: url(../fontes/NuckleTrialBold.otf);
+}
+@font-face {
+    font-family: nuckle;
+    src: url(../fontes/NuckleTrialRegular.otf);
+}
+
+@font-face {
+    font-family: nucklelight;
+    src: url(../fontes/NuckleTrialLight.otf);
+}
+
+@font-face {
+    font-family: nucklesemibold;
+    src: url(../fontes/NuckleTrialSemiBold.otf);
+}
+
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: black;
+    background-image: url(../imagens/backgroundcelular2.jpg);
+    background-size: cover;
+    background-position: center bottom;
+}
+
+header{
+    background-color: rgba(128, 128, 128, 0.321);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header > h1{
+    padding: 10px;
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'nucklebold', sans-serif;
+    margin: 0;
+}
+
+span#burger{
+    color: whitesmoke;
+    padding: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    user-select: none;
+}
+
+span#burger:hover{
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+nav{
+    display: none;
+}
+
+nav > ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding-bottom: 15px;
+}
+
+nav > ul > li{
+    padding-right: 15px;
+}
+
+nav > ul > li > a{
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    background-color: rgba(13, 13, 13, 0.379);
+    color: white;
+    border-radius: 30px;
+}
+
+nav > ul > li > a:hover{
+    background-color: gray;
+}
+
+main{
+    width: 85vw;
+    background-color: rgba(255, 255, 255, 0.599);
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+article > h2{
+    padding-bottom: 20px;
+    font-family: 'nuckle', Arial, Helvetica, sans-serif;;
+}
+
+h2#titulo2{
+    padding-top: 25px;
+}
+
+article > p{
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 17px;
+    line-height: 25px;
+    font-family: 'nuckle', 'Times New Roman', Times, serif
+}
+
+article{
+    display: block;
+    align-items: center;
+    height: 100%;
+}
+
+article img{
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+blockquote#citacao{
+    font-size: 0.9em;
+    border-left: 1px solid black;
+    padding-left: 18px;
+    line-height: 24px;
+    font-family: nucklelight;
+}
+
+blockquote#citacao2{
+    font-size: 0.9em;
+    border-left: 1px solid black;
+    padding: 15px 0px 0px 18px ;
+    font-family: nucklelight;
+}
