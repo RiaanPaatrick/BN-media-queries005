@@ -72,6 +72,7 @@ nav > ul{
     justify-content: center;
     list-style-type: none;
     padding-bottom: 15px;
+    user-select: none;
 }
 
 nav > ul > li{
